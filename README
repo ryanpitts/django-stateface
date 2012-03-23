@@ -35,7 +35,9 @@ Add django-stateface to your INSTALLED_APPS, or drop the `templates` and `templa
 Usage
 =====
 
-In your Django templates, render a state shape icon by feeding this tag with a string or a context variable.
+In your Django templates, render a state shape icon by feeding this tag with a string (state name, postal code or AP abbreviation) or a context variable.
 
+    {% render_stateface_icon 'Washington' %}
     {% render_stateface_icon 'WA' %}
+    {% render_stateface_icon 'Wash.' %}
     {% render_stateface_icon restaurant.city.state.abbr %}
